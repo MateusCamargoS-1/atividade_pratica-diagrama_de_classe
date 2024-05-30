@@ -1,0 +1,38 @@
+import Cachorro from "./model/Cachorro";
+import Cavalo from "./model/Cavalo";
+import Circulo from "./model/Circulo";
+import Computador from "./model/Computador";
+import Gato from "./model/Gato";
+import Item from "./model/Item";
+import Jogo from "./model/Jogo";
+import Pedido from "./model/Pedido";
+import Retangulo from "./model/Retangulo";
+import Usuario from "./model/Usuario";
+
+const item1 = new Item(50, "pneu", "pneu aro 26 bicileta");
+const item2 = new Item(30, "eixo", "eixo traseiro bicicleta");
+const pedido1 = new Pedido([item1, item2], 80);
+const retangulo1 = new Retangulo(15, 20);
+const circulo1 = new Circulo(30);
+const cachorro = new Cachorro();
+const gato = new Gato();
+const cavalo = new Cavalo();
+const usuario1 = new Usuario("Edsamn");
+const jogo1 = new Jogo("Call of Duty", "tiro");
+const computador1 = new Computador();
+
+retangulo1.desenhar();
+retangulo1.redimensionar();
+circulo1.desenhar();
+circulo1.desenhar();
+cachorro.andar();
+cachorro.comer();
+cachorro.latir();
+gato.andar();
+gato.comer();
+gato.miar();
+cavalo.andar();
+cavalo.comer();
+cavalo.relinchar();
+usuario1.escolherJogo(jogo1);
+computador1.executarJogos(usuario1);
